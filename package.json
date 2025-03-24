@@ -1,0 +1,12 @@
+{
+  "name": "fullstackopen-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "bmi": "ts-node bmiCalculator.ts"
+  },
+  "keywords": [],
+  "author": "Nicolas Gimenez",
+  "license": "ISC",
+  "description": "Solution of the exercises from the course"
+}

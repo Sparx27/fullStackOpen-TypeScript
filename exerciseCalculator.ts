@@ -1,6 +1,6 @@
 import { isNumber } from "./utils";
 
-type Result = {
+interface Result {
   periodLength: number;
   trainingDays: number;
   target: number;

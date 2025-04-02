@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "bmi": "ts-node bmiCalculator.ts"
+    "bmi": "ts-node bmiCalculator.ts",
+    "calculator": "ts-node exerciseCalculator.ts"
   },
   "keywords": [],
   "author": "Nicolas Gimenez",
   "license": "ISC",
-  "description": "Solution of the exercises from the course"
+  "description": "Solution to the exercises from the course"
 }

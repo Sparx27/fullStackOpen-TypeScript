@@ -1,3 +1,3 @@
-## fullStackOpen TypeScript course
+# fullStackOpen TypeScript course
 
-# Solutions of the exercises
+## Solutions of the exercises

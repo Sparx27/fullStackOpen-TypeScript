@@ -9,5 +9,12 @@
   "keywords": [],
   "author": "Nicolas Gimenez",
   "license": "ISC",
-  "description": "Solution to the exercises from the course"
+  "description": "Solution to the exercises from the course",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sparx27/fullStackOpen-TypeScript.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.17"
+  }
 }

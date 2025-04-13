@@ -44,4 +44,4 @@ console.log(calculateBmi({ height: Number(height), weight: Number(weight) })); *
 
 export {
   calculateBmi
-}
+};

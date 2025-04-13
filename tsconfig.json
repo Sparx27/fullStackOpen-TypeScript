@@ -11,5 +11,7 @@
     "alwaysStrict": true,
     "esModuleInterop": true,
     "declaration": true,
+    "moduleResolution": "node16",
+    "module": "Node16"
   }
 }

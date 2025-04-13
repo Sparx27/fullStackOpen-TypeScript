@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev index.ts"
+    "dev": "ts-node-dev index.ts",
+    "lint": "eslint --ext .ts ."
   },
   "keywords": [],
   "author": "Nicolas Gimenez",
@@ -14,7 +15,11 @@
     "url": "git+https://github.com/Sparx27/fullStackOpen-TypeScript.git"
   },
   "devDependencies": {
-    "@types/node": "^22.13.17"
+    "@types/node": "^22.13.17",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "jiti": "^2.4.2"
   },
   "dependencies": {
     "@types/express": "^5.0.1",

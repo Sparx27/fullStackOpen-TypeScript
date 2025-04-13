@@ -1,4 +1,4 @@
-import { isNumber } from "./utils";
+// import { isNumber } from "./utils";
 
 interface Result {
   periodLength: number;
@@ -10,15 +10,15 @@ interface Result {
   ratingDescription: string;
 }
 
-const [, , trg, ...values] = process.argv;
-const hours: Array<(string | undefined)> = [...values];
+/* const [, , trg, ...values] = process.argv;
+const hours: Array<(string | undefined)> = [...values]; */
 
-function verifyArgs() {
+/* function verifyArgs() {
   if (!trg || !isNumber(trg)) throw new Error('ERROR: Target is wrong or missing');
 
   if (hours.length < 1 || hours.some(h => !isNumber(h)))
     throw new Error('ERROR: Hours are wrong or missing');
-}
+} */
 
 function calcRating(target: number, average: number): number {
   const preRes: number = average / target;
@@ -47,12 +47,12 @@ function calculate(target: number, values: number[]): Result {
     success,
     rating,
     ratingDescription
-  }
+  };
 
   return res;
 }
 
-try {
+/* try {
   verifyArgs();
 }
 catch (err: unknown) {
@@ -60,6 +60,10 @@ catch (err: unknown) {
   if (err instanceof Error) errorMessage = err.message
   console.log(errorMessage)
   process.exit(1)
-}
+} */
 
-console.log(calculate(Number(trg), hours.map(h => Number(h))))
+//console.log(calculate(Number(trg), hours.map(h => Number(h))))
+
+export {
+  calculate
+};

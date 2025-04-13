@@ -1,11 +1,11 @@
-import { isNumber } from "./utils";
+// import { isNumber } from "./utils";
 
 type HeightWeight = {
   height: number;
   weight: number;
 }
 
-const [, , height, weight] = process.argv
+/* const [, , height, weight] = process.argv
 
 function verifyArgs(): void {
   if (!height || !isNumber(height) || Number(height) <= 0) {
@@ -15,7 +15,7 @@ function verifyArgs(): void {
   if (!weight || !isNumber(weight) || Number(weight)) {
     throw new Error('ERROR: Weight is wrong or missing')
   }
-}
+} */
 
 function calculateBmi(info: HeightWeight): string {
   if (info.weight == 0) throw new Error('Weight can not be 0');
@@ -30,7 +30,7 @@ function calculateBmi(info: HeightWeight): string {
   else return 'Obese (Class III)';
 }
 
-try {
+/* try {
   verifyArgs()
 }
 catch (err: unknown) {
@@ -40,4 +40,8 @@ catch (err: unknown) {
   process.exit(1)
 }
 
-console.log(calculateBmi({ height: Number(height), weight: Number(weight) }));
+console.log(calculateBmi({ height: Number(height), weight: Number(weight) })); */
+
+export {
+  calculateBmi
+}

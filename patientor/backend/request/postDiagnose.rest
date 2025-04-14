@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/diagnose
+Content-Type: application/json
+
+{
+  "name": "new",
+  "latin": "af"
+}

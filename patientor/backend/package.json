@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "Solution of patientor full stack open",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "tsc": "tsc",
-    "dev": "ts-node-dev index.ts",
-    "lint": "eslint --ext .ts ."
+    "dev": "ts-node-dev src/index.ts",
+    "lint": "eslint --ext .ts .",
+    "start": "node build/index.js"
   },
   "author": "Nicolas Gimenez",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "eslint": "^9.24.0",
@@ -19,6 +23,8 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "uuid": "^11.1.0"
   }
 }

@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import * as patientService from './patient-service';
-import { PublicPatientInfo } from './patient-types';
 import { toNewPatient } from './patient-utils';
+import { PublicPatientInfo } from './patient-types';
 
 export const getAll = (_req: Request, res: Response): void => {
   const patients: PublicPatientInfo[] = patientService.getAll();
@@ -12,7 +12,7 @@ export const add = (req: Request, res: Response): void => {
   try {
     const newPatientData = toNewPatient(req.body);
     const addedPatient = patientService.add(newPatientData);
-    res.status(200).json(addedPatient);
+    res.status(201).json(addedPatient);
   }
   catch (err) {
     let message = 'Something went wrong.';

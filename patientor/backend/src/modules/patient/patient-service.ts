@@ -5,8 +5,7 @@ import { toPublicPatientInfo } from './patient-utils';
 
 const patients = data as Patient[];
 
-export const getAll = (): PublicPatientInfo[] =>
-  patients.map((p) => toPublicPatientInfo(p));
+export const getAll = (): PublicPatientInfo[] => patients.map((p) => toPublicPatientInfo(p));
 
 export const add = (data: NewPatient): PublicPatientInfo => {
   const toAdd: Patient = {

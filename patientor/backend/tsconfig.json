@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "outDir": "./build/",
-    "module": "commonjs",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

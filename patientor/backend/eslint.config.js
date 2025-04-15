@@ -1,9 +1,9 @@
-import parser from '@typescript-eslint/parser';
-import plugin from '@typescript-eslint/eslint-plugin';
-import { configs } from '@typescript-eslint/eslint-plugin';
+const parser = require('@typescript-eslint/parser');
+const plugin = require('@typescript-eslint/eslint-plugin');
+const { configs } = require('@typescript-eslint/eslint-plugin');
 
 /** @type {import('@eslint/js').FlatConfig[]} */
-export default [
+module.exports = [
   {
     files: ['**/*.ts'],
     ignores: ['node_modules', 'build'],
@@ -31,11 +31,11 @@ export default [
       'indent': ['error', 2],
       'semi': ['error', 'always'],
       'quotes': ['error', 'single'],
-      'brace-style': ['error', 'stroustrup', { 'allowSingleLine': true }],
+      'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
       'comma-dangle': ['error', 'never'],
       'object-curly-spacing': ['error', 'always'],
       'space-before-function-paren': ['error', 'never'],
-      'no-trailing-spaces': ['warn'],
-    },
+      'no-trailing-spaces': ['warn']
+    }
   }
 ];
